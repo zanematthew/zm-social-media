@@ -24,7 +24,7 @@ add_action('wp_head', 'zm_social_head' );
  */
 function zm_social_facebook_button( $url=null ){
 
-    if ( empty( $url ) ){
+    if ( is_null( $url ) ){
         $url = site_url();
     }
 
