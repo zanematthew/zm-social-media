@@ -33,7 +33,7 @@ function zm_social_facebook_button( $url=null ){
 
     print '<div class="zm-social-facebook-button">'.$html.'</div>';
 }
-add_action( 'zm_social_facebook_button', 'zm_social_facebook_button', 8, 1 );
+
 
 /**
  * Spits out smelly template for the small twitter tweet button
@@ -63,7 +63,7 @@ function zm_social_twitter_button( $title=null, $url=null ){
 
     print '<div class="zm-social-twitter-button">'.$html.'</div>';
 }
-add_action('zm_social_twitter_button', 'zm_social_twitter_button', 8, 2 );
+
 
 function zm_social_settings(){?>
     <fieldset>
