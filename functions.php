@@ -1,11 +1,5 @@
 <?php
 
-function zm_social_admin_init(){
-    global $_zm_setting_fields;
-    $_zm_setting_fields[] = 'zm_social_fb_app_id';
-}
-add_action( 'admin_init', 'zm_social_admin_init' );
-
 function zm_social_head(){
     /**
      * @todo this should be a method, so it could be
@@ -74,4 +68,4 @@ function zm_social_settings(){?>
         </div>
     </fieldset>
 <?php }
-add_action( 'zm_social_settings', 'zm_social_settings' );
+add_action( 'zm_ev_after_settings', 'zm_social_settings' );
